@@ -33,6 +33,8 @@ fn main() {
         cfg.define("CMAKE_TOOLCHAIN_FILE", "c:/vcpkg/scripts/buildsystems/vcpkg.cmake");
     }
 
+    cfg.define("CMAKE_BUILD_TYPE", "Release");
+
     // Build
     cfg.build();
 
