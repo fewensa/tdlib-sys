@@ -30,6 +30,7 @@ fn main() {
     // Specify path to gperf if specified in the environment
     if let Ok(path) = gperf_path {
         cfg.define("GPERF_EXECUTABLE:FILEPATH", path);
+        cfg.define("CMAKE_TOOLCHAIN_FILE", "c:/vcpkg/scripts/buildsystems/vcpkg.cmake");
     }
 
     // Build
